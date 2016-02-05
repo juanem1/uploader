@@ -1,5 +1,5 @@
 {
-    "name": "Ibox/Uploader",
+    "name": "ibox/uploader",
     "description": "File uploader for laravel framework.",
     "require": {
         "php": ">=5.4.0"
