@@ -1,0 +1,17 @@
+{
+    "name": "turk/uploader",
+    "description": "File uploader for laravel framework.",
+    "require": {},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juan Emilio Turk",
+            "email": "juanemilioturk@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Turk\\Uploader\\": "src/"
+        }
+    }
+}
