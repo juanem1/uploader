@@ -1,6 +1,6 @@
 <?php
 
-namespace Turk\Uploader;
+namespace Ibox\Uploader;
 
 class Uploader
 {
