@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Turk\\Uploader\\": "src/"
+            "Ibox\\Uploader\\": "src/"
         }
     }
 }
