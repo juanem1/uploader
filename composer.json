@@ -1,7 +1,9 @@
 {
     "name": "turk/uploader",
     "description": "File uploader for laravel framework.",
-    "require": {},
+    "require": {
+        "php": ">=5.4.0"
+    },
     "license": "MIT",
     "authors": [
         {
