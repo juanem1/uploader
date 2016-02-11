@@ -2,17 +2,19 @@
     "name": "ibox/uploader",
     "description": "File uploader for laravel framework.",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Juan Emilio Turk",
-            "email": "juanemilioturk@gmail.com"
+            "email": "juanemilioturk@gmail.com",
+            "homepage": "http://ideasbox.com.ar"
         }
     ],
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "Ibox\\Uploader\\": "src/"
         }
     }
