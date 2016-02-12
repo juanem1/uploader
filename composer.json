@@ -14,8 +14,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "Ibox\\Uploader\\": "src/"
+        "psr-4": {
+            "Ibox\\Uploader": "src/"
         }
     }
 }
