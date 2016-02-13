@@ -1,4 +1,5 @@
 # Laravel File Uploader
+This package take advantage of the Laravel [Filesytem](https://laravel.com/docs/5.2/filesystem) library.
 
 # Installation
 Begin by installing this package through Composer. Edit your project's composer.json file to require ibox/uploader
@@ -14,24 +15,8 @@ Next, update Composer from the terminal:
 composer update
 ```
 
-Once this operation completes, the final step is to add the service provider. Open config/app.php, and add a new item to the providers array.
-```
-Ibox\Uploader\UploaderServiceProvider::class
-```
-
-> NOTE: By default all uploaded files will be stored in public/img folder.  
-> You can change this behavior publishing the config file.
-```
-php artisan vendor:publish
-```
-
 # Configure
-Under config folder you will find **ibox.uploader.php** update *disk* key to change the default storage method.
-
-Default option: *local*. Available options: *local* or *s3*
-```
-'disk' => env('IBOX_UPLOADER_DISK', 'local')
-```
+In config/filesystems.php update default and cloud keys. This library will upload all files to the default option.
 
 # Usage
 Example:
