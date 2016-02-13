@@ -46,5 +46,8 @@ class ImagesController extends Controller
 }
 ```
 
+# Next features
+Enable queue to faster responses.
+
 # License
 This package is open source software licensed under the [MIT license](http://opensource.org/licenses/MIT) 
