@@ -9,7 +9,7 @@ class Uploader
 
     public function __construct() 
     {
-        $this->disk = env('UPLOADER_DISK', 'local');
+        $this->disk = config('ibox.uploader.disk');
     }
 
     /**
