@@ -16,7 +16,8 @@ composer update
 ```
 
 # Configure
-In config/filesystems.php update default key. This library will upload all files to the selected option.
+In config/filesystems.php update default key. This library will upload all files to the default option.
+If you are uploading locally also update the *root* key to define were the files will be stored.
 
 # Usage
 Example:
@@ -45,6 +46,8 @@ class ImagesController extends Controller
 
 }
 ```
+NOTE: The secong parameter ($path), will only work for cloud storage, check config section.
+
 
 # Next features
 Enable queue to faster responses.
