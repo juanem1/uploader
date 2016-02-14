@@ -5,20 +5,13 @@ namespace Ibox\Uploader;
 class Uploader
 {
 
-    private $disk;
-
-    public function __construct() 
-    {
-        $this->disk = config('ibox.uploader.disk');
-    }
-
     /**
      * Upload all images
      * @param $images Array 
      * @param $path String Destination path
      * @return Array The name of the stored image
      */
-    public function upload($images, $path = '/img/')
+    public function upload($images, $path = '')
     {
         // Store image names
         $names = [];
@@ -45,7 +38,7 @@ class Uploader
         $name = str_slug($filename) . '.' . $file->getClientOriginalExtension();
 
         // Upload
-        \Storage::disk($this->disk)->put($path . $name, file_get_contents($file->getRealPath()));
+        \Storage::put($path . $name, file_get_contents($file->getRealPath()));
 
 
         return $name;

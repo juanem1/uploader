@@ -4,9 +4,7 @@
     "keywords": ["laravel", "File uploader", "S3"],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "~5.0",
-        "league/flysystem-aws-s3-v3": "^1.0",
-        "vlucas/phpdotenv": "~1.0"
+        "illuminate/support": "~5.0"
     },
     "support": {
         "issues": "https://github.com/juanem1/uploader/issues",
@@ -24,6 +22,10 @@
         "psr-4": {
             "Ibox\\Uploader\\": "src/"
         }
+    },
+    "suggest": {
+        "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
+        "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0)."
     },
     "minimum-stability": "dev"
 }
