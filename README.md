@@ -16,7 +16,7 @@ composer update
 ```
 
 # Configure
-In config/filesystems.php update default and cloud keys. This library will upload all files to the default option.
+In config/filesystems.php update default key. This library will upload all files to the selected option.
 
 # Usage
 Example:
