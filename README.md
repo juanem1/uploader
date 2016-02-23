@@ -1,7 +1,7 @@
 # Laravel File Uploader
 This package take advantage of the Laravel [Filesytem](https://laravel.com/docs/5.2/filesystem) library.
 
-# Installation
+## Installation
 Begin by installing this package through Composer. Edit your project's composer.json file to require ibox/uploader
 
 ```json
@@ -15,11 +15,11 @@ Next, update Composer from the terminal:
 composer update
 ```
 
-# Configure
+## Configure
 In config/filesystems.php update default key. This library will upload all files to the default option.
 If you are uploading locally also update the *root* key to define were the files will be stored.
 
-# Usage
+## Usage
 Example:
 
 In your HTML:
@@ -49,8 +49,8 @@ class ImagesController extends Controller
 NOTE: The secong parameter ($path), will only work for cloud storage, check config section.
 
 
-# Next features
+## Next features
 Enable queue to faster responses.
 
-# License
+## License
 This package is open source software licensed under the [MIT license](http://opensource.org/licenses/MIT) 
